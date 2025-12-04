@@ -3900,6 +3900,19 @@
       <entry value="2048" name="POSITION_TARGET_TYPEMASK_YAW_RATE_IGNORE">
         <description>Ignore yaw rate</description>
       </entry>
+      <!-- PX4 related flags -->
+      <entry value="4096" name="POSITION_TARGET_TYPEMASK_TAKEOFF">
+        <description>takeoff at current position</description>
+      </entry>
+      <entry value="8192" name="POSITION_TARGET_TYPEMASK_LAND">
+        <description>land at current position</description>
+      </entry>
+      <entry value="16384" name="POSITION_TARGET_TYPEMASK_LOITER">
+        <description>loiter at current position</description>
+      </entry>
+      <entry value="32768" name="POSITION_TARGET_TYPEMASK_IDLE">
+        <description>idle at current position</description>
+      </entry>
     </enum>
     <enum name="ATTITUDE_TARGET_TYPEMASK" bitmask="true">
       <description>Bitmap to indicate which dimensions should be ignored by the vehicle: a value of 0b00000000 indicates that none of the setpoint dimensions should be ignored.</description>

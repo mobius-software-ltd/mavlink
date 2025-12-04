@@ -1,7 +1,8 @@
-group 'io.dronefleet.mavlink'
+group 'com.mobius.software.protocols.mavlink'
+version '1.1.11.MOBIUS'
 
 apply plugin: 'java'
-apply from: rootProject.file('sonatype.gradle')
+apply plugin: 'maven-publish'
 
 sourceCompatibility = 1.8
 
@@ -11,4 +12,12 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+          from components.java          
+        }
+     }
 }

@@ -81,5 +81,29 @@ public enum PositionTargetTypemask {
      * Ignore yaw rate 
      */
     @MavlinkEntryInfo(2048)
-    POSITION_TARGET_TYPEMASK_YAW_RATE_IGNORE
+    POSITION_TARGET_TYPEMASK_YAW_RATE_IGNORE,
+
+    /**
+     * takeoff at current position 
+     */
+    @MavlinkEntryInfo(4096)
+    POSITION_TARGET_TYPEMASK_TAKEOFF,
+
+    /**
+     * land at current position 
+     */
+    @MavlinkEntryInfo(8192)
+    POSITION_TARGET_TYPEMASK_LAND,
+
+    /**
+     * loiter at current position 
+     */
+    @MavlinkEntryInfo(16384)
+    POSITION_TARGET_TYPEMASK_LOITER,
+
+    /**
+     * idle at current position 
+     */
+    @MavlinkEntryInfo(32768)
+    POSITION_TARGET_TYPEMASK_IDLE
 }
